@@ -36,29 +36,28 @@
       border: 2px solid var(--ramadan-gold);
     }
 
-    h1, h2 { color: var(--ramadan-gold); text-align: center; margin-bottom: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.6); }
+    h1, h2 { color: var(--ramadan-gold); text-align: center; margin-bottom: 1rem; }
 
     .card {
       background: rgba(30, 41, 59, 0.92);
       border-radius: 16px;
-      padding: 2.2rem;
+      padding: 2rem;
       margin-bottom: 2rem;
       box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-      border: 1px solid rgba(212,160,23,0.18);
+      border: 1px solid rgba(212,160,23,0.2);
     }
 
-    .form-group { margin-bottom: 1.4rem; }
-    label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: #e2e8f0; }
+    .form-group { margin-bottom: 1.3rem; }
+    label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
     input {
       width: 100%;
-      padding: 12px 16px;
+      padding: 12px;
       border-radius: 8px;
       border: 1px solid #4b5563;
       background: #1e293b;
       color: white;
       font-size: 1rem;
     }
-    input:focus { outline: none; border-color: var(--ramadan-gold); box-shadow: 0 0 0 3px rgba(212,160,23,0.25); }
 
     button {
       background: var(--ramadan-green);
@@ -69,9 +68,8 @@
       border-radius: 10px;
       cursor: pointer;
       font-weight: 600;
-      transition: all 0.25s;
     }
-    button:hover { background: #166534; transform: translateY(-1px); }
+    button:hover { background: #166534; }
 
     .btn-start {
       background: var(--ramadan-gold);
@@ -81,51 +79,41 @@
       margin: 2rem auto;
       display: block;
     }
-    .btn-start:hover { background: #b8860b; }
 
     .timer {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: bold;
       color: var(--ramadan-gold);
       text-align: center;
       margin: 1.5rem 0;
-      background: rgba(20,83,45,0.25);
       padding: 12px;
       border-radius: 12px;
+      background: rgba(20,83,45,0.3);
       border: 1px solid var(--ramadan-green);
     }
 
-    .question { margin: 2rem 0; font-size: 1.18rem; line-height: 1.7; }
+    .question { margin: 2rem 0; font-size: 1.2rem; line-height: 1.6; }
     .question strong { color: var(--ramadan-gold); }
 
-    .options { display: grid; gap: 0.9rem; margin-top: 1.2rem; }
+    .options { display: grid; gap: 1rem; margin-top: 1rem; }
     .option-label {
-      display: flex;
-      align-items: center;
       background: #1e293b;
-      padding: 14px 18px;
+      padding: 14px;
       border-radius: 10px;
       cursor: pointer;
       border: 2px solid transparent;
-      transition: all 0.2s;
     }
-    .option-label:hover { background: #253549; border-color: #475569; }
+    .option-label:hover { border-color: #475569; }
 
     input[type="radio"] { margin-left: 12px; accent-color: var(--ramadan-gold); }
 
     .result-card { text-align: center; }
-    .score-big { font-size: 4.8rem; font-weight: bold; color: var(--ramadan-gold); margin: 1rem 0; }
+    .score-big { font-size: 5rem; font-weight: bold; color: var(--ramadan-gold); margin: 1rem 0; }
 
-    .stats {
-      display: flex;
-      justify-content: center;
-      gap: 2.5rem;
-      flex-wrap: wrap;
-      margin: 1.5rem 0;
-    }
+    .stats { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin: 2rem 0; }
     .stat-box {
-      background: rgba(20,83,45,0.3);
-      padding: 1.2rem 2.2rem;
+      background: rgba(20,83,45,0.4);
+      padding: 1.5rem 2.5rem;
       border-radius: 12px;
       border: 1px solid var(--ramadan-green);
     }
@@ -138,13 +126,13 @@
       border-radius: 12px;
       overflow: hidden;
     }
-    th, td { padding: 14px 16px; text-align: right; }
+    th, td { padding: 14px; text-align: right; }
     th { background: var(--ramadan-green); color: white; }
-    tr:nth-child(even) { background: rgba(255,255,255,0.03); }
+    tr:nth-child(even) { background: rgba(255,255,255,0.04); }
 
-    .highlight-1 { background: #d4a01722; }
-    .highlight-2 { background: #cbd5e122; }
-    .highlight-3 { background: #9ca3af22; }
+    .highlight-1 { background: rgba(212,160,23,0.15); }
+    .highlight-2 { background: rgba(203,213,225,0.12); }
+    .highlight-3 { background: rgba(156,163,175,0.12); }
 
     .section-title {
       color: var(--ramadan-gold);
@@ -158,8 +146,7 @@
 
     @media (max-width: 600px) {
       .banner { height: 160px; }
-      .card { padding: 1.5rem; }
-      .score-big { font-size: 3.6rem; }
+      .score-big { font-size: 3.8rem; }
     }
   </style>
 </head>
@@ -172,20 +159,22 @@
 
   <h1>প্রোডাক্টিভ রমাদান - ২.০</h1>
   <h2>কুইজ প্রতিযোগিতা</h2>
-  <p style="text-align:center; color:#94a3b8; margin-bottom:2.5rem;">
+  <p style="text-align:center; color:#94a3b8; margin:1.5rem 0 2.5rem;">
     আয়োজনে: ঢাকা ইন্টারন্যাশনাল ইউনিভার্সিটি<br>
     সহযোগিতায়: ডিআইইউ মুসলিমস কমিউনিটি
   </p>
 
-  <!-- Home Buttons -->
-  <div style="text-align:center; margin:2rem 0;">
-    <button class="btn-start" onclick="showRegistration()">কুইজে অংশগ্রহণ করুন</button>
-    <button style="margin-left:1.5rem; background:#334155;" onclick="showRanking()">র‍্যাঙ্কিং দেখুন</button>
+  <!-- Home Screen -->
+  <div id="home" class="card">
+    <div style="text-align:center;">
+      <button class="btn-start" onclick="showRegistration()">কুইজে যোগ দিন</button>
+      <button style="margin-left:1.5rem; background:#334155; padding:16px 40px;" onclick="showRanking()">র‍্যাঙ্কিং দেখুন</button>
+    </div>
   </div>
 
   <!-- Registration -->
   <div id="registration" class="card hidden">
-    <h2 class="section-title">অংশগ্রহণের তথ্য দিন</h2>
+    <h2 class="section-title">অংশগ্রহণের তথ্য</h2>
     <form id="regForm">
       <div class="form-group">
         <label for="name">নাম *</label>
@@ -193,7 +182,7 @@
       </div>
       <div class="form-group">
         <label for="dept">বিভাগ *</label>
-        <input type="text" id="dept" required placeholder="যেমন: CSE, BBA, EEE...">
+        <input type="text" id="dept" required placeholder="যেমন: CSE, BBA, English...">
       </div>
       <div class="form-group">
         <label for="email">ইমেইল *</label>
@@ -209,7 +198,7 @@
       <div class="timer" id="timer">সময় বাকি: ০৮:০০</div>
       <div id="questionContainer"></div>
       <div style="text-align:center; margin-top:2.5rem;">
-        <button id="submitQuizBtn">কুইজ জমা দিন</button>
+        <button id="submitQuizBtn" style="background:#991b1b;">কুইজ জমা দিন</button>
       </div>
     </div>
   </div>
@@ -221,18 +210,12 @@
       <div class="score-big" id="scoreDisplay">0.00</div>
 
       <div class="stats">
-        <div class="stat-box">
-          <strong>সঠিক</strong><br><span id="correctCount">0</span>
-        </div>
-        <div class="stat-box">
-          <strong>ভুল</strong><br><span id="wrongCount">0</span>
-        </div>
-        <div class="stat-box">
-          <strong>এড়ানো</strong><br><span id="skipCount">0</span>
-        </div>
+        <div class="stat-box"><strong>সঠিক</strong><br><span id="correctCount">0</span></div>
+        <div class="stat-box"><strong>ভুল</strong><br><span id="wrongCount">0</span></div>
+        <div class="stat-box"><strong>এড়ানো</strong><br><span id="skipCount">0</span></div>
       </div>
 
-      <p style="margin:1.8rem 0; font-size:1.15rem;">
+      <p style="margin:1.5rem 0; font-size:1.1rem;">
         সময় নিয়েছেন: <strong id="timeTaken"></strong>
       </p>
 
@@ -246,7 +229,10 @@
   <!-- Ranking -->
   <div id="ranking" class="hidden">
     <div class="card">
-      <h2 class="section-title">লাইভ র‍্যাঙ্কিং</h2>
+      <h2 class="section-title">লাইভ র‍্যাঙ্কিং (এই ব্রাউজারে)</h2>
+      <p style="text-align:center; color:#94a3b8; margin-bottom:1.5rem; font-size:0.95rem;">
+        (Netlify-তে সবার জন্য শেয়ার্ড লিডারবোর্ডের জন্য Supabase/FaunaDB লাগবে)
+      </p>
       <table id="rankTable">
         <thead>
           <tr>
@@ -269,12 +255,11 @@
 </div>
 
 <script>
-// Questions array - 21 questions (new Q4 added)
+// Questions (21 total)
 const questions = [
   { q: "রাসূল ﷺ এর পুরো নাম কী?", options: ["আহমদ ইবনে আব্দুল্লাহ", "মুহাম্মদ ইবনে আব্দুল্লাহ", "মুহাম্মদ ইবনে উমর", "আব্দুল্লাহ ইবনে মুহাম্মদ"], ans: 1 },
   { q: "রাসূল ﷺ কোথায় জন্মগ্রহণ করেন?", options: ["মদিনা", "তাইফ", "মক্কা", "জেরুজালেম"], ans: 2 },
   { q: "রাসূল ﷺ কত সালে জন্মগ্রহণ করেন?", options: ["৫৬৫ খ্রি.", "৫৭০ খ্রি.", "৫৮০ খ্রি.", "৫৯০ খ্রি."], ans: 1 },
-  // New Question 4 (changed - no overlap)
   { q: "রাসূল ﷺ কোন মাসে জন্মগ্রহণ করেন?", options: ["রজব", "রবিউল আউয়াল", "শাওয়াল", "রমাদান"], ans: 1 },
   { q: "রাসূল ﷺ এর মাতার নাম কী?", options: ["আমিনা বিনতে ওয়াহব", "হালিমা সাদিয়া", "খাদিজা বিনতে খুয়াইলিদ", "ফাতিমা বিনতে আসাদ"], ans: 0 },
   { q: "রাসূল ﷺ কত বছর বয়সে নবুয়ত লাভ করেন?", options: ["৩০ বছর", "৩৫ বছর", "৪০ বছর", "৪৫ বছর"], ans: 2 },
@@ -295,27 +280,36 @@ const questions = [
   { q: "মক্কা বিজয় (ফতহ মক্কা) কত হিজরিতে হয়েছিল?", options: ["৬ হিজরি", "৭ হিজরি", "৮ হিজরি", "৯ হিজরি"], ans: 2 }
 ];
 
-const TOTAL_TIME = 8 * 60; // 480 seconds
+const TOTAL_TIME = 8 * 60;
 let currentQuestion = 0;
 let selectedAnswers = Array(questions.length).fill(-1);
 let timerInterval;
 let startTime;
 
-// Storage Helpers
+// ─── Storage ─────────────────────────────────────
 function getParticipants() {
-  const data = localStorage.getItem("ramadanQuizParticipants");
-  return data ? JSON.parse(data) : [];
+  try {
+    const data = localStorage.getItem("ramadanQuizParticipants");
+    return data ? JSON.parse(data) : [];
+  } catch (e) {
+    return [];
+  }
 }
 
 function saveParticipant(p) {
-  const list = getParticipants();
-  list.push(p);
-  localStorage.setItem("ramadanQuizParticipants", JSON.stringify(list));
+  try {
+    const list = getParticipants();
+    list.push(p);
+    localStorage.setItem("ramadanQuizParticipants", JSON.stringify(list));
+  } catch (e) {
+    console.warn("LocalStorage write failed", e);
+  }
 }
 
-// Navigation
+// ─── Navigation ──────────────────────────────────
 function showHome() {
-  document.querySelectorAll('.card, #registration, #quiz, #result, #ranking').forEach(el => el.classList.add('hidden'));
+  document.querySelectorAll('#home, #registration, #quiz, #result, #ranking').forEach(el => el.classList.add('hidden'));
+  document.getElementById("home").classList.remove('hidden');
 }
 
 function showRegistration() {
@@ -339,15 +333,15 @@ function showRanking() {
   renderRanking();
 }
 
-// Timer
+// ─── Timer ───────────────────────────────────────
 function startTimer() {
   let timeLeft = TOTAL_TIME;
   const timerEl = document.getElementById("timer");
 
   timerInterval = setInterval(() => {
     timeLeft--;
-    const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
-    const s = String(timeLeft % 60).padStart(2, '0');
+    const m = String(Math.floor(timeLeft / 60)).padStart(2,'0');
+    const s = String(timeLeft % 60).padStart(2,'0');
     timerEl.textContent = `সময় বাকি: ${m}:${s}`;
 
     if (timeLeft <= 0) {
@@ -359,7 +353,7 @@ function startTimer() {
 
 function stopTimer() { clearInterval(timerInterval); }
 
-// Quiz Logic
+// ─── Quiz ────────────────────────────────────────
 function loadQuestion(idx) {
   const q = questions[idx];
   let html = `<div class="question"><strong>প্রশ্ন ${idx+1}/${questions.length}:</strong><br>${q.q}</div>`;
@@ -387,10 +381,7 @@ function loadQuestion(idx) {
 function submitQuiz(timeUp = false) {
   stopTimer();
 
-  let score = 0;
-  let correct = 0;
-  let wrong = 0;
-  let skip = 0;
+  let score = 0, correct = 0, wrong = 0, skip = 0;
 
   selectedAnswers.forEach((ans, i) => {
     if (ans === -1) skip++;
@@ -424,7 +415,7 @@ function submitQuiz(timeUp = false) {
   showResult();
 }
 
-// Ranking
+// ─── Ranking ─────────────────────────────────────
 function renderRanking() {
   const participants = getParticipants();
   
@@ -455,7 +446,7 @@ function renderRanking() {
   });
 }
 
-// Events
+// ─── Events ──────────────────────────────────────
 document.getElementById("regForm").addEventListener("submit", e => {
   e.preventDefault();
   const name = document.getElementById("name").value.trim();
